@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Win32;
+using TreeEditor;
 using UnityEngine;
 
 public static class Noise
@@ -41,6 +42,7 @@ public static class Noise
                 {
                     float sampleX = (x-halfWidth) / scale * frequency + octaveOffsets[i].x;
                     float sampleY = (y-halfHeight) / scale * frequency + octaveOffsets[i].y;
+
 
                     float perlinValue = Mathf.PerlinNoise(sampleX, sampleY) * 2 - 1 /*So we have negative values*/; //Generate the Perlin noise
                     noiseHeight += perlinValue * amplitude;
