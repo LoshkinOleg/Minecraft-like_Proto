@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(OldChunkGenerator))]
+/*[CustomEditor(typeof(OldChunkGenerator))]
 public class OldChunkGeneratorEditor : Editor
 {
     public override void OnInspectorGUI()
@@ -24,3 +24,4 @@ public class OldChunkGeneratorEditor : Editor
         }
     }
 }
+*/

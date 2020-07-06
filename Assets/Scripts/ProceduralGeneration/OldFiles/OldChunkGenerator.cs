@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OldChunkGenerator : MonoBehaviour
+/*public class OldChunkGenerator : MonoBehaviour
 {
 
-    /*public enum DrawMode
+    public enum DrawMode
     {
         NoiseMap,
         ColourMap,
     }
 
-    public MapGenerator.DrawMode drawMode;*/
+    public MRMapGenerator.DrawMode drawMode;
 
     public int mapWidth;
     public int mapHeight;
@@ -33,7 +33,7 @@ public class OldChunkGenerator : MonoBehaviour
 
     public void GenerateMap()
     {
-        float[,] noiseMap = Noise.GenerateNoiseMap(mapWidth, mapHeight, seed, noiseScale, octaves, persistance, lacunarity, offset);
+        float[,] noiseMap = MRNoise.GenerateNoiseMap(mapWidth, mapHeight, seed, noiseScale, octaves, persistance, lacunarity, offset);
 
         for (int y = 0; y < mapHeight; y++)
         {
@@ -69,4 +69,4 @@ public class OldChunkGenerator : MonoBehaviour
             octaves = 0;
         }
     }
-}
+}*/
