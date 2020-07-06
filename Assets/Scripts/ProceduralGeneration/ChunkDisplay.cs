@@ -30,11 +30,11 @@ public class ChunkDisplay : MonoBehaviour
     void InstantiateChunk(Vector2Int position)
     {
         int[,] map = Noise.MapGeneration(offset + new Vector2(chunkSize * position.x, chunkSize * position.y), chunkSize, chunkHeight, seed, frequency, octaves);
-        for (int y = 0; y < chunkSize; y++)
+        for (int x = 0; x < chunkSize; x++)
         {
-            for (int x = 0; x < chunkSize; x++)
+            for (int y = 0; y < chunkSize; y++)
             {
-                Instantiate(cube, new Vector3(x + (chunkSize* position.x), map[x, y], y + (chunkSize * position.y)), Quaternion.identity);
+                Instantiate(cube, new Vector3(x + (chunkSize* position.y), map[x, y], y + (chunkSize * position.x)), Quaternion.identity);
             }
         }
     }
